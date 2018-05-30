@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Client Project</title>
+     <title>Moogle</title>
+    <style>
+    </style>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<div class="page-header">
+  <h1>Moogle <small id="subtitle">Your movie api</small></h1>
+</div>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,9 +25,76 @@
   </head>
   <body>
     
-    <h1> Moogle </h1>
-   <input></input>
-   <button onclick="myFunction()">Click me</button>
-  </body>
+    
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Moogle</a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">important stuff <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Blog</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genre <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action movie</a></li>
+            <li><a href="#">Sci-fi movie</a></li>
+            <li><a href="#">RomCom</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="navbar-form navbar-left">
+        <div class="form-group">
+          <input id= "inputBar" type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default" id="submitButton">Submit</button>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+   
+   <div  id="sideOne">
+   <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoBtRhueP0Kn_O7e89DXSBKBUz-1Nu4Ngb9eqFzqF3EbPGWYVP" alignwidth height="150" alt="Image result" class="movieImageA"/>
+   <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcRlGeugacRkKznDOtRhUCVt0AkrOTPbaaKwF9xgGZgNViyC_Xko" alignwidth height="150" alt="Image result" class="movieImageA"/>
+   <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcTp0qlAoWcOOswIkL_qpjYzJqCCDmWXiBzCXiqbE43Obo8c0Z-s" alignwidth height="150" alt="Image result" class="movieImageA"/>
+   <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcQPpcKQ9eWZGxJe6eXyCW91eayLVm4KqruvJz3GP0F2T2w46yKZ" alignwidth height="150" alt="Image result" class="movieImageA"/>
+   </div>
+   <div  id="sideTwo">
+   <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcTPxyoxzLf33_chM3uqooaT3tiyEBbQmqJb0Ndbvpt6qfQ4ybIk" alignwidth height="150" alt="Image result" class= "movieImageB"/>
+   <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcSoStMb2jeN136xQhf2g3ROpTB9Dker9IlfGbMbwYB3ruC9VcOj" alignwidth height="150" alt="Image result" class= "movieImageB"/>
+   <img src="http://resources2.news.com.au/images/2012/06/21/1226404/810078-famous-movie-posters.jpg" alignwidth height="150" alt="Image result" class= "movieImageB"/>
+   <img src="https://ia.media-imdb.com/images/M/MV5BMjQ1MzcxNjg4N15BMl5BanBnXkFtZTgwNzgwMjY4MzI@._V1_UX182_CR0,0,182,268_AL_.jpg" alignwidth height="150" alt="Image result" class= "movieImageB"/>
+   </div>
+  </body>
+    <div align="center"> 
+      <div id="content"></div>
+    </div>
 </html>
